@@ -440,11 +440,11 @@ class CoreEnforcer:
         req_str = req_str + ", ".join([str(v) for v in rvals])
 
         req_str = req_str + " ---> %s" % result
-        if result:
-            self.logger.info(req_str)
-        else:
+        #if result:
+        #    self.logger.info(req_str)
+        #else:
             # leaving this in error for now, if it's very noise this can be changed to info or debug
-            self.logger.error(req_str)
+        #    self.logger.error(req_str)
 
         explain_rule = []
         if explain_index != -1 and explain_index < policy_len:
