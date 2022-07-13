@@ -100,7 +100,7 @@ class CoreEnforcer:
         self.eft = get_effector(self.model["e"]["e"].value)
         self.watcher = None
 
-        self.enabled = True
+        self.enabled = False #set by anandthati
         self.auto_save = True
         self.auto_build_role_links = True
 
